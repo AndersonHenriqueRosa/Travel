@@ -1,0 +1,588 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+body{
+    background-color:whitesmoke;
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar{
+    background-color: white;
+    display: flex;
+    padding: 10px 2%;
+    justify-content: space-between;
+    width: 100%;
+    color: orangered;
+    font-size: 22px;
+}
+
+.travel-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./imagens/london.jpg);
+    height: 690px;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 690px;
+    background-position: center;
+}
+
+.travel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 65%; 
+}
+
+.travel-options{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.icon-travel{
+    display: flex;
+    height: 35px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    gap: 15px;
+}
+
+.icon-travel i{
+    font-size: 13px;
+}
+
+.fa-plane-up{
+    position: relative;
+    top:-2px;
+    transform: rotate(45deg);
+}
+
+.travel-form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px 20px 30px 20px;
+    flex-direction: column;
+}
+
+.travel-form h1{
+    margin-bottom: 20px;
+    font-weight: 200;
+    font-size: 26px;
+}
+
+.form-travel{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.from, .to{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    width:100%;
+    gap: 5px;
+    
+}
+.from input, .to input{
+    height: 40px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.button-search{
+    margin-top: 15px;
+    color: rgb(247, 243, 243);
+    font-weight: 500;
+    font-size: 14px;
+    width: 180px;
+    height: 40px;
+    border: none;
+    background-color: rgb(105,105,105);
+}
+
+.icon-travel:hover{
+    background-color: orangered;
+}
+
+.button-search:hover{
+    font-weight: 500;
+    cursor: pointer;
+    background-color: black;
+    transition: 0.3s;
+}
+
+
+
+main{
+
+    margin: 0% 10% auto;
+}
+
+.offers{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 35px 0px;
+}
+
+.title-offers{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.cards-offers{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 5fr 2.5fr 2.5fr;
+    grid-template-rows: 5fr 5fr ;
+    grid-template-areas: 
+    "card_1 card_2 card_3"
+    "card_1 card_4 card_5"
+}
+.card_1{
+    grid-area:card_1 ;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cinqueterre{
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+    filter: grayscale(0.4);
+}
+.cinqueterre:hover{
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+.card_1 > legend{
+    position: relative;
+    top: -40px;
+    left: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 22px; 
+}
+
+.card_2{
+    grid-area:card_2;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.newyork{
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+    filter: grayscale(0.4);
+}
+
+.newyork:hover{
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+.card_2 > legend{
+    position: relative;
+    top: -40px;
+    left: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 22px; 
+}
+
+.card_3{
+    grid-area:card_3;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sanfran{
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+    filter: grayscale(0.4);
+}
+
+.sanfran:hover{
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+.card_3 > legend{
+    position: relative;
+    top: -40px;
+    left: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 22px; 
+}
+
+.card_4{
+    grid-area:card_4;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pisa{
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+    filter: grayscale(0.4);
+}
+
+.pisa:hover{
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+.card_4 > legend{
+    position: relative;
+    top: -40px;
+    left: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 22px; 
+}
+.card_5{
+    grid-area:card_5;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.paris{
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+    filter: grayscale(0.4);
+}
+
+.paris:hover{
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+
+.card_5 > legend{
+    position: relative;
+    top: -40px;
+    left: 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 22px; 
+}
+
+.title-nature>h1{
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.cards-nature{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-areas: 
+    "card_norway card_austria"
+}
+
+.card_norway{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    background-color:white;
+    grid-area:card_norway;
+    cursor: pointer; 
+}
+
+.card_norway:hover{
+    background-color: lightgray;
+    filter: grayscale(.5);
+    transition: 0.5s;
+}
+
+.ocean{
+    width: 100%;
+}
+
+.text{
+    height: 100%;
+    width: 100%;
+    margin: 10px 0px 5px 30px;
+}
+
+.text>h3,h5,p,a{
+    margin-bottom: 20px;
+}
+
+.text>h3{
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.text>h5{
+    color: rgb(94, 92, 92);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.text>a{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    margin-left: 15px;
+    height: 30px;
+    width: 100px;
+}
+
+.text>a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.card_austria{
+    height: 100%;
+    background-color: white;
+    grid-area:card_austria;
+    cursor: pointer;
+}
+
+.card_austria:hover{
+    background-color: lightgray;
+    filter: grayscale(.5);
+    transition: 0.5s;
+}
+
+.mountains{
+    width: 100%;
+}
+
+.box-email{
+    display: flex;
+    flex-direction: column;
+    color: rgb(247, 243, 243);
+    padding: 15px;
+    margin: 30px 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(105,105,105);
+}
+
+.box-email h1{
+    font-size: 28px;
+    font-weight: 100;
+    margin: 20px 0px;
+}
+ 
+
+.form-email {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%; 
+    height: 100%; 
+
+}
+
+.form-email > input{
+    height: 40px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.subscribe{
+    height: 40px;
+    color: rgb(247, 243, 243);
+    font-weight: 500;
+    font-size: 14px;
+    width: 100px;
+    margin: 10px 0px;
+    border: none;
+    background-color: rgb(250,128,114);
+    cursor: pointer;
+}
+
+.subscribe:hover{
+    background-color: black;
+    transition: .5s;
+
+}
+
+.box-contact{
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.box-contact h1{
+    font-size: 28px;
+    font-weight: 100;
+    margin: 20px 0px;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;  
+
+}
+
+.list-contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 5px;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.list-contact a{
+    text-decoration: none;
+    color: black;
+}
+
+.list-contact i{
+    margin-right: 15px;
+}
+
+.form-contact > input{
+    height: 50px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.sendmessege{
+    height: 50px;
+    color: rgb(247, 243, 243);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    width: 160px;
+    margin: 10px 0px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+.sendmessege:hover{
+    background-color: orangered;
+    transition: 0.5s;
+}
+
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: rgb(169,169,169) ;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    gap: 30px;
+    text-align: center;
+
+}
+.titleFooter{
+    font-size: 18px;
+    font-weight: 200;
+    color: rgb(105,105,105);
+}
+.botao{
+    text-decoration: none;
+    color: rgb(105,105,105);
+    font-size: 24px;
+}
+
+.botao>span> i:hover{
+    color: black;
+    transform: scale(1.1);
+    transition:.5s;
+}
+
+.footer-contact a {
+    color: rgb(105,105,105);
+}
+
+@media(max-width:768px){
+
+    .travel-container{
+        height: 470px;
+        background-size: 100% 470px;
+        
+    }
+}
+
+@media(max-width:450px){
+    .travel-container{
+        background: none;
+        height: 100%;
+    }
+
+    .travel{
+        width: 100%; 
+    }
+
+    .form-travel{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .cards-offers{
+        display: grid;
+        grid-template-columns: 10fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+        grid-template-areas: 
+        "card_1"
+        "card_2"
+        "card_3"
+        "card_4"
+        "card_5" 
+    }
+
+    .cards-nature{
+        display: grid;
+        grid-template-columns: 10fr;
+        grid-template-rows: 5fr 5fr;
+        grid-template-areas: 
+        "card_norway"
+        "card_austria"
+    }
+
+    
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <i class="fa fa-location-dot"></i>
+                <label for="">Logo</label>
+            </div>
+            <div class="search">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+        <div class="travel-container">
+            <div class="travel">
+                <div class="travel-options">
+                    <div class="icon-travel">
+                        <i class="fa-solid fa-plane-up"></i>
+                        <span>Flight</span>
+                    </div>
+                    <div class="icon-travel">
+                        <i class="fa fa-bed"></i>
+                        <span>Hotel</span>
+                    </div>
+                    <div class="icon-travel">
+                        <i class="fa fa-car"></i>
+                        <span>Rental</span>
+                    </div>
+                </div>
+                <div class="travel-form">
+                    <h1>Travel the world with us</h1>
+                    <form class="form-travel" action="https://formsubmit.co/your@email.com" method="POST">
+                        <div class="from">
+                            <label for="from" id="from">From</label>
+                            <input type="search" id="from" name="q" placeholder="Departing from" required/>
+                        </div>
+                        <div class="to">
+                            <label for="to" id="to">To</label>
+                            <input type="search" id="to" name="q" placeholder="Arriving at" required/>
+                        </div>  
+                    </form>
+                    <button class="button-search">Search and find dates</button>
+                </div>
+            </div>
+        </div>
+    </header>            
+    
+    <main>
+        <section class="offers">
+            <div class="title-offers">
+                <h1>Good Offers Right Now</h1>
+                <p>Up to <strong>50%</strong> discount</p>
+            </div>
+            <div class="cards-offers">
+                <div class="card_1">
+                    <img class="cinqueterre" src="imagens/cinqueterre.jpg">
+                    <legend>Cinque Terre</legend>
+                </div>
+
+                <div class="card_2">
+                    <img class="newyork" src="imagens/newyork.jpg">
+                    <legend>New York</legend>
+                </div>
+
+                <div class="card_3">
+                    <img class="sanfran" src="imagens/sanfran.jpg">
+                    <legend>San Francisco</legend>
+                </div>
+
+                <div class="card_4">
+                    <img class="pisa" src="imagens/pisa.jpg">
+                    <legend>Pisa</legend>
+                </div>
+
+                <div class="card_5">
+                    <img class="paris" src="imagens/paris.jpg">
+                    <legend>Paris</legend>
+                </div>
+            </div>
+
+            
+        </section>
+        <section class="nature">
+            <div class="title-nature">
+                <h1>Explore Nature</h1>
+                <p>Travel with us and see nature at its finest</p>
+            </div>
+            <div class="cards-nature">
+                <div class="card_norway">
+                    <img class="ocean" src="imagens/ocean.jpg">
+                    <legend class="text">
+                    <h3>West Coast, Norway</h3>
+                    <h5>Roundtrip from $79</h5>
+                    <p>Praesent ticidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <a href="">Buy Tickets</a>
+                </legend>
+                </div>
+
+                <div class="card_austria">
+                    <img class="mountains" src="imagens/mountains.jpg">
+                    <legend class="text">
+                        <h3>Mountains, Austria</h3>
+                        <h5>One-way from $39</h5>
+                        <p>Praesent ticidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <a href="">Buy Tickets</a>
+                    </legend>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="box-email">
+                <h1>Get the best offers first!</h1>
+                <p>join our newsletter.</p>
+                <form class="form-email" action="https://formsubmit.co/your@email.com" method="POST">
+                    <label for="email" id="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Your Email adress" required />
+                    <button class="subscribe" type="submit">Subscribe</button>
+                </form>
+            </div> 
+
+            <div class="box-contact">
+                <h1>Contact</h1>
+                <p>Let us book your next trip!</p>
+                <ul class="list-contact">
+                    <li>
+                        <a  href="" class="address-contact"><i class="fa fa-location-dot"></i>Chicago, US</a>
+                    </li>
+                    <li>
+                        <a  href="" class="phone-contact"><i class="fa-solid fa-phone"></i>Phone: +00 151515</a>
+                    </li>
+                    <li>
+                        <a  href="" class="email-contact"><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</a>
+                    </li>
+                </ul>
+                <form class="form-contact" action="https://formsubmit.co/your@email.com" method="POST">
+                    <input type="name" name="name" placeholder="Name" required />
+                    <input type="email" name="email" placeholder="Email" required />
+                    <input type="text" id="name" name="name" placeholder="Message" required />
+                    <button class="sendmessege" type="submit">Send Messege</button>
+                </form>
+            </div> 
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+           
+            <h3 class="titleFooter"> Find Us On</h3>
+            <div class="redessociais"> 
+                <a href="" class="botao"><span> <i class="fa-brands fa-square-facebook"></i> </span></a>            
+                <a href="" class="botao"><span> <i class="fa-brands fa-instagram"></i> </span></a>            
+                <a href="" class="botao"><span> <i class="fa-brands fa-snapchat"></i> </span></a>            
+                <a href="" class="botao"><span> <i class="fa-brands fa-pinterest-p"></i> </span></a>
+                <a href="" class="botao"><span> <i class="fa-brands fa-twitter"></i> </span></a>
+                <a href="" class="botao"><span> <i class="fa-brands fa-linkedin-in"></i> </span></a>            
+            </div>
+            <p>Powered by <a  href="" class="">w3css</a></p>
+            
+        </div>
+    </footer>
+    
+</body>
+</html>
